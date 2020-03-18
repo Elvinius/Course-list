@@ -1,0 +1,51 @@
+* {
+    box-sizing: border-box;
+}
+
+.container {
+    padding-left: 0;
+    padding-right: 0;
+}
+
+h2 {
+    text-transform: uppercase;
+}
+
+table {
+    border-bottom: 1px solid #dee2e6;
+}
+
+/*Scroll top button styles*/
+#button {
+    display: inline-block;
+    background: linear-gradient(90deg, #d53369 0%, #daae51 100%);
+    width: 50px;
+    height: 50px;
+    text-align: center;
+    border-radius: 4px;
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    transition: background-color .3s,
+    opacity .5s, visibility .5s;
+    opacity: 0;
+    visibility: hidden;
+    z-index: 1000;
+}
+i.fa-arrow-up {
+    font-style: normal;
+    font-size: 2em;
+    line-height: 50px;
+    color: #fff;
+}
+#button:hover {
+    cursor: pointer;
+    background-color: #333;
+}
+#button:active {
+    background-color: #555;
+}
+#button.show {
+    opacity: 1;
+    visibility: visible;
+}
